@@ -1,0 +1,40 @@
+<h1 id="solution-pockets">Solution pockets</h1>
+<h2 id="run-interactively-with-binder">Run interactively with binder</h2>
+<p><a href="https://mybinder.org/v2/gh/georgkaufmann/Thesis_Gruber_SolutionPockets.git/main?filepath=index.ipynb"><img src="https://mybinder.org/badge_logo.svg" alt="Binder" /></a></p>
+<h2 id="versioning">Versioning</h2>
+<p>We use <a href="https://git-scm.com/">Git</a> for versioning.</p>
+<p>Merge remote branch to local branch with the following steps:</p>
+<ol style="list-style-type: decimal">
+<li>Check local and remote branches:</li>
+</ol>
+<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash">$ <span class="fu">git</span> branch
+<span class="ex">*</span> main
+$ <span class="fu">git</span> branch -r
+  <span class="ex">github/main</span></code></pre></div>
+<ol start="2" style="list-style-type: decimal">
+<li>Fetch status information for local and remote branches</li>
+</ol>
+<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash">$ <span class="fu">git</span> fetch github main
+<span class="ex">Username</span> for <span class="st">&#39;https://github.com&#39;</span>: XXXX
+<span class="ex">Password</span> for <span class="st">&#39;https://georg.kaufmann@fu-berlin.de@github.com&#39;</span>: 
+<span class="ex">From</span> https://github.com/georgkaufmann/CO2
+ <span class="ex">*</span> branch            main       -<span class="op">&gt;</span> FETCH_HEAD</code></pre></div>
+<ol start="3" style="list-style-type: decimal">
+<li>List differences:</li>
+</ol>
+<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash">$ <span class="fu">git</span> log --oneline main..github/main</code></pre></div>
+<ol start="4" style="list-style-type: decimal">
+<li>Merge remote branch to local branch:</li>
+</ol>
+<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash">$ <span class="fu">git</span> merge github/main</code></pre></div>
+<h2 id="authors">Authors</h2>
+<ul>
+<li><strong>Georg Kaufmann</strong> - <em>Initial work</em> - <a href="http://userpage.fu-berlin.de/~geodyn">Georg Kaufmann</a></li>
+</ul>
+<div class="figure">
+<img src="images/fu-logo.jpg" />
+
+</div>
+<h2 id="license">License</h2>
+<p>This project is licensed for classroom use only.</p>
+<h2 id="acknowledgments">Acknowledgments</h2>
