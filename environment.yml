@@ -1,0 +1,9 @@
+name: Thesis Gillian Gruber -solution pockets-
+dependencies:
+  - numpy
+  - scipy
+  - matplotlib
+  - pandas
+  - ipywidgets
+  - jupyter_contrib_nbextensions
+  - basemap-data-hires
